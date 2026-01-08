@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/global.css" />
+    <title>Onah Victor | Full Stack Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-purple-900 text-zinc-200 overflow-x-hidden">
+    <header class="fixed top-0 w-full z-50 bg-purple-950/80 backdrop-blur-md border-b border-purple-800">
+        <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="logo text-2xl font-black text-cyan-400">OV</div>
+            <ul class="flex gap-8 text-sm md:text-base font-medium uppercase tracking-widest">
+                <li><a href="#about" class="hover:text-cyan-400 transition">About</a></li>
+                <li><a href="#projects" class="hover:text-cyan-400 transition">Projects</a></li>
+                <li><a href="#contact" class="hover:text-cyan-400 transition">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="min-h-screen flex items-center py-24 px-6 pt-32">
+            <div class="space-y-2 lg:max-w-6xl lg:mx-auto w-full">
+                <p class="text-cyan-400 text-lg md:text-2xl lg:text-4xl font-semibold">Hi, my name is</p>
+                <h1
+                    class="text-6xl md:text-8xl lg:text-[8rem] font-black text-purple-300 drop-shadow-[0_0_15px_rgba(168,85,247,0.5)]">
+                    Onah Victor
+                </h1>
+                <h2 class="text-pink-400 text-3xl md:text-5xl font-bold md:max-w-2xl">I build full-stack web
+                    applications.</h2>
+                <p class="md:text-xl lg:text-2xl md:mt-6 md:max-w-xl text-zinc-300">
+                    I am a developer specializing in building digital experiences. Currently, I focus on creating
+                    accessible, user-centered products.
+                </p>
+                <a href="#projects"
+                    class="mt-8 px-8 py-4 bg-indigo-700 hover:bg-indigo-600 transition-all inline-block border-indigo-200 border font-bold text-lg">
+                    View My Work
+                </a>
+            </div>
+        </section>
+
+        <section class="py-24 px-6 space-y-12 lg:max-w-6xl lg:mx-auto" id="about">
+            <h3 class="text-4xl md:text-6xl lg:text-8xl font-semibold text-purple-300">About Me</h3>
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-12 items-start">
+                <div
+                    class="md:col-span-2 border-8 border-double border-purple-300 overflow-hidden shadow-2xl reveal reveal-left">
+                    <img src="./images/victor-onah.png"
+                        class="object-cover w-full grayscale hover:grayscale-0 transition duration-500"
+                        alt="Onah Victor">
+                </div>
+
+                <div class="md:col-span-3 space-y-6 md:text-xl lg:text-2xl leading-relaxed reveal reveal-right">
+                    <p>Hello! I'm Victor. My interest in web development started back when I decided to try editing
+                        custom themes for online forums.</p>
+                    <p>Fast-forward to today, and I've had the privilege of building various projects ranging from
+                        simple landing pages to complex web applications.</p>
+                    <p class="text-cyan-400 font-semibold">Technologies I've been working with:</p>
+                    <ul class="flex flex-wrap gap-3">
+                        <li class="px-3 py-1 bg-yellow-500 text-black font-bold">JavaScript</li>
+                        <li class="px-3 py-1 bg-blue-500 text-white font-bold">React</li>
+                        <li class="px-3 py-1 bg-green-800 text-white font-bold">Node.js</li>
+                        <li class="px-3 py-1 bg-blue-600 text-white font-bold">TypeScript</li>
+                        <li class="px-3 py-1 bg-blue-400 text-white font-bold">PostgreSQL</li>
+                        <li class="px-3 py-1 bg-green-500 text-white font-bold">MongoDB</li>
+                        <li class="px-3 py-1 bg-zinc-700 text-white font-bold">Express.js</li>
+                        <li class="px-3 py-1 bg-pink-700 text-white font-bold">Nest.js</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-24 px-6 space-y-12 lg:max-w-6xl lg:mx-auto">
+            <h3 class="text-4xl md:text-6xl lg:text-8xl font-semibold text-purple-300">Featured Projects</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <article
+                    class="p-8 hover:translate-y-[-8px] transition-all bg-purple-900/10 border border-cyan-300/50 backdrop-blur-xl space-y-4 group reveal reveal-up">
+                    <h4 class="text-2xl lg:text-3xl font-bold text-cyan-300">Project Title One</h4>
+                    <p class="md:text-lg text-zinc-400">A detailed description of the project, the problems it solved,
+                        and the technologies used in the development process.</p>
+                    <ul class="flex flex-wrap gap-2 text-sm font-mono">
+                        <li class="text-cyan-400">JavaScript</li>
+                        <li class="text-cyan-400">React</li>
+                        <li class="text-cyan-400">TypeScript</li>
+                        <li class="text-cyan-400">Git/GitHub</li>
+                    </ul>
+                    <div class="flex gap-6 pt-4">
+                        <a href="#"
+                            class="text-pink-400 hover:text-white transition underline underline-offset-4">GitHub</a>
+                        <a href="#" class="text-pink-400 hover:text-white transition underline underline-offset-4">Live
+                            Demo</a>
+                    </div>
+                </article>
+
+                <article
+                    class="p-8 hover:translate-y-[-8px] transition-all bg-purple-900/10 border border-cyan-300/50 backdrop-blur-xl space-y-4 group reveal reveal-up">
+                    <h4 class="text-2xl lg:text-3xl font-bold text-cyan-300">Project Title Two</h4>
+                    <p class="md:text-lg text-zinc-400">Brief overview of a second project highlighting your skills in
+                        backend architecture and database management.</p>
+                    <ul class="flex flex-wrap gap-2 text-sm font-mono">
+                        <li class="text-cyan-400">Next.js</li>
+                        <li class="text-cyan-400">Git/GitHub</li>
+                        <li class="text-cyan-400">Prisma ORM</li>
+                    </ul>
+                    <div class="flex gap-6 pt-4">
+                        <a href="#"
+                            class="text-pink-400 hover:text-white transition underline underline-offset-4">GitHub</a>
+                        <a href="#" class="text-pink-400 hover:text-white transition underline underline-offset-4">Live
+                            Demo</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="py-24 px-6 space-y-12 lg:max-w-6xl lg:mx-auto" id="contact">
+            <h3 class="text-4xl md:text-6xl lg:text-8xl font-semibold text-purple-300">Get In Touch</h3>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <div class="space-y-6 reveal reveal-left">
+                    <p class="md:text-xl lg:text-2xl leading-relaxed">
+                        I'm currently looking for new opportunities. Whether you have a question or just want to say hi,
+                        my inbox is always open!
+                    </p>
+                    <div class="pt-4">
+                        <p class="text-cyan-400 font-bold text-lg mb-2">Direct Email:</p>
+                        <a href="mailto:your.email@example.com"
+                            class="text-2xl font-bold hover:text-pink-400 transition">onah.victor@example.com</a>
+                    </div>
+                </div>
+
+                <form action="#" class="bg-purple-950/50 p-8 border border-purple-400 space-y-6 reveal reveal-right">
+                    <div>
+                        <label class="block text-sm uppercase tracking-widest text-zinc-400 mb-2">Name</label>
+                        <input type="text"
+                            class="w-full bg-purple-950 border border-purple-500 p-3 focus:border-cyan-400 outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm uppercase tracking-widest text-zinc-400 mb-2">Email</label>
+                        <input type="email"
+                            class="w-full bg-purple-950 border border-purple-500 p-3 focus:border-cyan-400 outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm uppercase tracking-widest text-zinc-400 mb-2">Message</label>
+                        <textarea rows="4"
+                            class="w-full bg-purple-950 border border-purple-500 p-3 focus:border-cyan-400 outline-none transition"></textarea>
+                    </div>
+                    <button type="submit"
+                        class="w-full py-4 bg-indigo-700 hover:bg-indigo-600 border border-indigo-200 text-white font-bold transition">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer
+        class="py-12 px-6 border-t bg-purple-950/50 border-purple-300 lg:max-w-6xl lg:mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="flex gap-8 font-medium">
+            <a href="#" class="hover:text-cyan-400 transition">GitHub</a>
+            <a href="#" class="hover:text-cyan-400 transition">LinkedIn</a>
+            <a href="#" class="hover:text-cyan-400 transition">Twitter</a>
+        </div>
+        <p class="text-zinc-300 text-sm italic">Designed & Built by Onah Victor &copy; 2026</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.15, // Trigger when 15% of the element is visible
+                rootMargin: "0px 0px -50px 0px" // Slight offset so it triggers just as it enters
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting)
+                        entry.target.classList.add('active');
+
+                });
+            }, observerOptions);
+
+            const animatedElements = document.querySelectorAll('.reveal');
+
+            animatedElements.forEach((el) => void observer.observe(el));
+        });
+    </script>
+</body>
+
+</html>

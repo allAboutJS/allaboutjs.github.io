@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+body {
+	font-family: "Space Grotesk", sans-serif;
+}
+
+#hero {
+	background-color: rgb(83, 0, 83);
+	/* Layer 1: The Net (Top) */
+	background-image:
+		linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+		linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+		/* Layer 2: The Mesh (Bottom) */
+		radial-gradient(
+			circle at 20% 30%,
+			rgba(37, 205, 235, 0.4),
+			transparent 40%
+		),
+		radial-gradient(circle at 80% 70%, rgba(234, 51, 106, 0.4), transparent 40%);
+	background-size:
+		40px 40px,
+		40px 40px,
+		100% 100%,
+		100% 100%;
+}
+
+#projects {
+	/* Default color */
+	/* background-color: black; */
+	/* Dots */
+	background-image:
+		radial-gradient(circle at 20% 20%, rgb(0, 70, 0), transparent),
+		radial-gradient(circle at 80% 80%, rgb(87, 0, 87), transparent),
+		radial-gradient(circle at center, rgb(53, 53, 122), transparent),
+		radial-gradient(circle at center, rgb(211, 99, 255) 1px, transparent 1px);
+	background-size:
+		100% 100%,
+		100% 100%,
+		100% 100%,
+		20px 20px;
+	background-blend-mode: overlay;
+	background-attachment: fixed;
+}
+
+.reveal {
+	opacity: 0;
+	filter: blur(5px);
+	transition: all 0.8s cubic-bezier(0.17, 0.55, 0.55, 1);
+}
+
+.reveal-left {
+	transform: translateX(-50px);
+}
+.reveal-right {
+	transform: translateX(50px);
+}
+.reveal-up {
+	transform: translateY(40px);
+}
+
+.reveal.active {
+	opacity: 1;
+	filter: blur(0);
+	transform: translate(0, 0);
+}
+
+.reveal:nth-child(2) {
+	transition-delay: 200ms;
+}
+.reveal:nth-child(3) {
+	transition-delay: 400ms;
+}
+.reveal:nth-child(4) {
+	transition-delay: 600ms;
+}
