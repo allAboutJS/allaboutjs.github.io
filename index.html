@@ -9,171 +9,372 @@
     <title>Onah Victor | Full Stack Web Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg-purple-900 text-zinc-200 overflow-x-hidden">
-    <header class="fixed top-0 w-full z-50 bg-purple-950/80 backdrop-blur-md border-b border-purple-800">
-        <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="logo text-2xl font-black text-cyan-400">OV</div>
-            <ul class="flex gap-8 text-sm md:text-base font-medium uppercase tracking-widest">
-                <li><a href="#about" class="hover:text-cyan-400 transition">About</a></li>
-                <li><a href="#projects" class="hover:text-cyan-400 transition">Projects</a></li>
-                <li><a href="#contact" class="hover:text-cyan-400 transition">Contact</a></li>
+<body class="bg-black text-zinc-200 overflow-x-hidden">
+    <header class="fixed p-4 top-0 left-0 right-0 z-50">
+        <nav
+            class="max-w-5xl mx-auto rounded-md bg-zinc-800/50 backdrop-blur-md border border-zinc-800 p-4 flex justify-between items-center">
+
+            <div class="logo text-2xl font-black text-purple-400">OV</div>
+
+            <ul class="hidden md:flex gap-6 text-sm font-medium uppercase tracking-widest">
+                <li><a href="#about" class="hover:text-purple-400 transition">About</a></li>
+                <li><a href="#projects" class="hover:text-purple-400 transition">Projects</a></li>
+                <li><a href="#skills" class="hover:text-purple-400 transition">Skills</a></li>
+                <li><a href="#experience" class="hover:text-purple-400 transition">Experience</a></li>
+                <li><a href="#projects" class="hover:text-purple-400 transition">Projects</a></li>
+                <li><a href="#contact" class="hover:text-purple-400 transition">Contact</a></li>
             </ul>
+
+            <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 focus:outline-none">
+                <span class="w-6 h-0.5 bg-zinc-200"></span>
+                <span class="w-6 h-0.5 bg-zinc-200"></span>
+                <span class="w-6 h-0.5 bg-zinc-200"></span>
+            </button>
         </nav>
+
+        <div id="mobile-menu"
+            class="hidden md:hidden max-w-5xl mx-auto mt-2 rounded-md bg-zinc-900/90 backdrop-blur-md border border-zinc-800 p-4">
+            <ul class="flex flex-col gap-4 text-sm font-medium uppercase tracking-widest">
+                <li><a href="#about" class="hover:text-purple-400 transition">About</a></li>
+                <li><a href="#projects" class="hover:text-purple-400 transition">Projects</a></li>
+                <li><a href="#skills" class="hover:text-purple-400 transition">Skills</a></li>
+                <li><a href="#experience" class="hover:text-purple-400 transition">Experience</a></li>
+                <li><a href="#projects" class="hover:text-purple-400 transition">Projects</a></li>
+                <li><a href="#contact" class="hover:text-purple-400 transition">Contact</a></li>
+            </ul>
+        </div>
     </header>
 
-    <main>
-        <section id="hero" class="min-h-screen flex items-center py-24 px-6 pt-32">
-            <div class="space-y-2 lg:max-w-6xl lg:mx-auto w-full">
-                <p class="text-cyan-400 text-lg md:text-2xl lg:text-4xl font-semibold">Hi, my name is</p>
+    <main class="overflow-hidden">
+        <section id="hero" class="px-4 py-36 text-center">
+            <div class="space-y-2">
+                <p class="reveal reveal-down text-purple-200 text-lg md:text-2xl lg:text-4xl font-semibold">Hi, my name
+                    is</p>
                 <h1
-                    class="text-6xl md:text-8xl lg:text-[8rem] font-black text-purple-300 drop-shadow-[0_0_15px_rgba(168,85,247,0.5)]">
+                    class="reveal reveal-scale text-4xl md:text-6xl lg:text-8xl font-black text-purple-100 drop-shadow-[0_0_15px_rgba(168,85,247,0.5)]">
                     Onah Victor
                 </h1>
-                <h2 class="text-pink-400 text-3xl md:text-5xl font-bold md:max-w-2xl">I build full-stack web
+                <h2 class="reveal reveal-scale text-purple-400 text-xl md:text-2xl lg:text-4xl font-bold">I build
+                    full-stack web
                     applications.</h2>
-                <p class="md:text-xl lg:text-2xl md:mt-6 md:max-w-xl text-zinc-300">
+                <p class="reveal reveal-scale md:text-lg lg:text-xl text-zinc-300 max-w-2xl mx-auto">
                     I am a developer specializing in building digital experiences. Currently, I focus on creating
                     accessible, user-centered products.
                 </p>
                 <a href="#projects"
-                    class="mt-8 px-8 py-4 bg-indigo-700 hover:bg-indigo-600 transition-all inline-block border-indigo-200 border font-bold text-lg">
+                    class="reveal reveal-up mt-4 px-4 py-2 bg-white rounded-md text-black transition-all inline-block font-bold text-sm md:text-base lg:text-lg">
                     View My Work
                 </a>
             </div>
         </section>
 
-        <section class="py-24 px-6 space-y-12 lg:max-w-6xl lg:mx-auto" id="about">
-            <h3 class="text-4xl md:text-6xl lg:text-8xl font-semibold text-purple-300">About Me</h3>
-            <div class="grid grid-cols-1 md:grid-cols-5 gap-12 items-start">
-                <div
-                    class="md:col-span-2 border-8 border-double border-purple-300 overflow-hidden shadow-2xl reveal reveal-left">
+        <section class="pb-24 px-4 space-y-12 max-w-5xl mx-auto" id="about">
+            <h3 class="reveal reveal-scale text-2xl md:text-4xl lg:text-6xl font-semibold text-purple-200">About Me</h3>
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-6 items-stretch">
+                <div class="md:col-span-2 rounded-md overflow-hidden shadow-2xl reveal reveal-left h-full">
                     <img src="./images/victor-onah.png"
-                        class="object-cover w-full grayscale hover:grayscale-0 transition duration-500"
+                        class="object-cover w-full h-full grayscale hover:grayscale-0 transition duration-500"
                         alt="Onah Victor">
                 </div>
 
-                <div class="md:col-span-3 space-y-6 md:text-xl lg:text-2xl leading-relaxed reveal reveal-right">
-                    <p>Hello! I'm Victor. My interest in web development started back when I decided to try editing
-                        custom themes for online forums.</p>
-                    <p>Fast-forward to today, and I've had the privilege of building various projects ranging from
-                        simple landing pages to complex web applications.</p>
-                    <p class="text-cyan-400 font-semibold">Technologies I've been working with:</p>
-                    <ul class="flex flex-wrap gap-3">
-                        <li class="px-3 py-1 bg-yellow-500 text-black font-bold">JavaScript</li>
-                        <li class="px-3 py-1 bg-blue-500 text-white font-bold">React</li>
-                        <li class="px-3 py-1 bg-green-800 text-white font-bold">Node.js</li>
-                        <li class="px-3 py-1 bg-blue-600 text-white font-bold">TypeScript</li>
-                        <li class="px-3 py-1 bg-blue-400 text-white font-bold">PostgreSQL</li>
-                        <li class="px-3 py-1 bg-green-500 text-white font-bold">MongoDB</li>
-                        <li class="px-3 py-1 bg-zinc-700 text-white font-bold">Express.js</li>
-                        <li class="px-3 py-1 bg-pink-700 text-white font-bold">Nest.js</li>
-                    </ul>
+                <div class="md:col-span-3 space-y-2 md:text-lg lg:text-xl leading-relaxed reveal reveal-right">
+                    <p>Over the years, that curiosity evolved into a strong focus on JavaScript and full-stack
+                        development, where I enjoy
+                        working close to the fundamentals—building systems from the ground up rather than relying
+                        heavily on abstractions.
+                        I'm particularly interested in how things work under the hood, from data structures and parsing
+                        logic to state
+                        management and performance-critical code.</p>
+
+                    <p>Today, I spend most of my time designing and building scalable web applications,
+                        developer-focused tools, and custom
+                        engines that solve real problems. I value clean architecture, thoughtful APIs, and maintainable
+                        code, and I'm
+                        constantly pushing myself to deepen my understanding of core computer science concepts as they
+                        apply to
+                        production-grade software.</p>
+
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="py-24 px-6 space-y-12 lg:max-w-6xl lg:mx-auto">
-            <h3 class="text-4xl md:text-6xl lg:text-8xl font-semibold text-purple-300">Featured Projects</h3>
+        <section
+            class="py-24 px-4 space-y-12 max-w-5xl mx-auto bg-linear-120 from-pink-950/40 to-purple-950/30 rounded-md"
+            id="skills">
+            <h3 class="reveal reveal-scale text-2xl md:text-4xl lg:text-6xl font-semibold text-purple-200">
+                My Skills
+            </h3>
+
+            <div class="space-y-6 reveal reveal-up">
+                <!-- Skill -->
+                <div>
+                    <div class="flex justify-between mb-2 text-sm uppercase tracking-widest">
+                        <span>JavaScript</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="w-full h-2 bg-zinc-800 rounded-xs">
+                        <div class="h-full bg-purple-500 reveal reveal-scale origin-left delay-200 rounded-xs w-[90%]"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex justify-between mb-2 text-sm uppercase tracking-widest">
+                        <span>React / Next.js</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="w-full h-2 bg-zinc-800 rounded-xs">
+                        <div class="h-full bg-purple-500 reveal reveal-scale origin-left delay-200 rounded-xs w-[85%]"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex justify-between mb-2 text-sm uppercase tracking-widest">
+                        <span>Node.js / Express</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="w-full h-2 bg-zinc-800 rounded-xs">
+                        <div class="h-full bg-purple-500 reveal reveal-scale origin-left delay-200 rounded-xs w-[80%]"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex justify-between mb-2 text-sm uppercase tracking-widest">
+                        <span>Databases (MongoDB)</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="w-full h-2 bg-zinc-800 rounded-xs">
+                        <div class="h-full bg-purple-500 reveal reveal-scale origin-left delay-200 rounded-xs w-[75%]"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex justify-between mb-2 text-sm uppercase tracking-widest">
+                        <span>System Design & Core CS</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="w-full h-2 bg-zinc-800 rounded-xs">
+                        <div class="h-full bg-purple-500 reveal reveal-scale origin-left delay-200 rounded-xs w-[70%]"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="py-24 px-4 space-y-12 max-w-5xl mx-auto" id="experience">
+            <h3 class="reveal reveal-scale text-2xl md:text-4xl lg:text-6xl font-semibold text-purple-200">
+                Experience
+            </h3>
+
+            <div class="space-y-6">
+                <!-- Experience Item -->
+                <article class="p-4 bg-zinc-900/50 rounded-md border border-zinc-800 reveal reveal-up">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-2">
+                        <h4 class="text-lg md:text-xl font-bold text-purple-300">
+                            Full Stack Web Developer — ROI Africa
+                        </h4>
+                        <span class="text-sm text-zinc-400">Feb 2025 - Present</span>
+                    </div>
+                    <p class="mt-2 text-zinc-300 text-sm md:text-base">
+                        Responsible for translating customer ideas into scalable, production-ready web applications.
+                        I design and build SEO-optimized user interfaces alongside fast, reliable backend systems
+                        tailored to business needs.
+                    </p>
+                </article>
+
+                <article class="p-4 bg-zinc-900/50 rounded-md border border-zinc-800 reveal reveal-up">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-2">
+                        <h4 class="text-lg md:text-xl font-bold text-purple-300">
+                            Full Stack Developer & Website Manager — Ebubeagu Properties
+                        </h4>
+                        <span class="text-sm text-zinc-400">Feb 2025 - Present</span>
+                    </div>
+                    <p class="mt-2 text-zinc-300 text-sm md:text-base">
+                        Built and managed a real estate platform featuring public-facing property listings and a secure
+                        admin dashboard for managing properties, blog posts, and customer interactions.
+                    </p>
+                </article>
+
+                <article class="p-4 bg-zinc-900/50 rounded-md border border-zinc-800 reveal reveal-up">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-2">
+                        <h4 class="text-lg md:text-xl font-bold text-purple-300">
+                            Backend Developer (Contract) — RichForth Global Group
+                        </h4>
+                        <span class="text-sm text-zinc-400">Sep 2024 - Feb 2025</span>
+                    </div>
+                    <p class="mt-2 text-zinc-300 text-sm md:text-base">
+                        Worked as a backend contractor developing email queuing systems and proxy lookup services
+                        using Node.js, with a focus on reliability and performance.
+                    </p>
+                </article>
+
+                <article class="p-4 bg-zinc-900/50 rounded-md border border-zinc-800 reveal reveal-up">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-2">
+                        <h4 class="text-lg md:text-xl font-bold text-purple-300">
+                            Frontend Web Developer — AtRizult Practical IT Consulting
+                        </h4>
+                        <span class="text-sm text-zinc-400">Jan 2024 - Sep 2024</span>
+                    </div>
+                    <p class="mt-2 text-zinc-300 text-sm md:text-base">
+                        Served as lead frontend developer, building user interfaces for systems including
+                        Hospital, School, and Restaurant Management platforms, with emphasis on usability
+                        and clean architecture.
+                    </p>
+                </article>
+
+                <article class="p-4 bg-zinc-900/50 rounded-md border border-zinc-800 reveal reveal-up">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-2">
+                        <h4 class="text-lg md:text-xl font-bold text-purple-300">
+                            Full Stack Web Developer & Website Manager — Iyke Bulkwill Ltd
+                        </h4>
+                        <span class="text-sm text-zinc-400">Nov 2023 - Nov 2024</span>
+                    </div>
+                    <p class="mt-2 text-zinc-300 text-sm md:text-base">
+                        Developed and maintained the company's e-commerce website, handling both frontend
+                        and backend responsibilities while ensuring stability, performance, and a smooth
+                        shopping experience.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="py-24 px-4 space-y-12 max-w-5xl rounded-md mx-auto">
+            <h3 class="reveal reveal-scale text-2xl md:text-4xl lg:text-6xl font-semibold text-purple-200">My Projects
+            </h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <article
+                    class="p-4 hover:translate-y-[-8px] transition-all bg-zinc-900/50 rounded-md backdrop-blur-md space-y-2 group reveal reveal-up">
+                    <h4 class="text-lg md:text-xl lg:text-2xl font-bold text-purple-300">Project Title One</h4>
+                    <p class="text-sm md:text-base lg:text-lg text-zinc-300">A detailed description of the project, the
+                        problems it solved,
+                        and the technologies used in the development process.</p>
+                    <ul class="flex flex-wrap gap-2 text-sm font-mono text-zinc-400">
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>TypeScript</li>
+                        <li>Git/GitHub</li>
+                    </ul>
+                    <div class="flex gap-2 pt-4">
+                        <a href="#" class="bg-zinc-800 px-4 py-2 text-sm rounded-md text-white transition">GitHub</a>
+                        <a href="#" class="bg-white px-4 py-2 text-sm rounded-md text-black transition">Live
+                            Demo</a>
+                    </div>
+                </article>
+
+                <article
+                    class="p-4 hover:translate-y-[-8px] transition-all bg-zinc-900/50 rounded-md backdrop-blur-md space-y-2 group reveal reveal-up">
+                    <h4 class="text-lg md:text-xl lg:text-2xl font-bold text-purple-300">Project Title One</h4>
+                    <p class="text-sm md:text-base lg:text-lg text-zinc-300">A detailed description of the project, the
+                        problems it solved,
+                        and the technologies used in the development process.</p>
+                    <ul class="flex flex-wrap gap-2 text-sm font-mono text-zinc-400">
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>TypeScript</li>
+                        <li>Git/GitHub</li>
+                    </ul>
+                    <div class="flex gap-2 pt-4">
+                        <a href="#" class="bg-zinc-800 px-4 py-2 text-sm rounded-md text-white transition">GitHub</a>
+                        <a href="#" class="bg-white px-4 py-2 text-sm rounded-md text-black transition">Live
+                            Demo</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="py-24 px-4 space-y-12 max-w-5xl mx-auto" id="contact">
+            <h3 class="reveal reveal-scale text-2xl md:text-4xl lg:text-6xl font-semibold text-purple-200">
+                Get In Touch
+            </h3>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <article
-                    class="p-8 hover:translate-y-[-8px] transition-all bg-purple-900/10 border border-cyan-300/50 backdrop-blur-xl space-y-4 group reveal reveal-up">
-                    <h4 class="text-2xl lg:text-3xl font-bold text-cyan-300">Project Title One</h4>
-                    <p class="md:text-lg text-zinc-400">A detailed description of the project, the problems it solved,
-                        and the technologies used in the development process.</p>
-                    <ul class="flex flex-wrap gap-2 text-sm font-mono">
-                        <li class="text-cyan-400">JavaScript</li>
-                        <li class="text-cyan-400">React</li>
-                        <li class="text-cyan-400">TypeScript</li>
-                        <li class="text-cyan-400">Git/GitHub</li>
-                    </ul>
-                    <div class="flex gap-6 pt-4">
-                        <a href="#"
-                            class="text-pink-400 hover:text-white transition underline underline-offset-4">GitHub</a>
-                        <a href="#" class="text-pink-400 hover:text-white transition underline underline-offset-4">Live
-                            Demo</a>
-                    </div>
-                </article>
-
-                <article
-                    class="p-8 hover:translate-y-[-8px] transition-all bg-purple-900/10 border border-cyan-300/50 backdrop-blur-xl space-y-4 group reveal reveal-up">
-                    <h4 class="text-2xl lg:text-3xl font-bold text-cyan-300">Project Title Two</h4>
-                    <p class="md:text-lg text-zinc-400">Brief overview of a second project highlighting your skills in
-                        backend architecture and database management.</p>
-                    <ul class="flex flex-wrap gap-2 text-sm font-mono">
-                        <li class="text-cyan-400">Next.js</li>
-                        <li class="text-cyan-400">Git/GitHub</li>
-                        <li class="text-cyan-400">Prisma ORM</li>
-                    </ul>
-                    <div class="flex gap-6 pt-4">
-                        <a href="#"
-                            class="text-pink-400 hover:text-white transition underline underline-offset-4">GitHub</a>
-                        <a href="#" class="text-pink-400 hover:text-white transition underline underline-offset-4">Live
-                            Demo</a>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section class="py-24 px-6 space-y-12 lg:max-w-6xl lg:mx-auto" id="contact">
-            <h3 class="text-4xl md:text-6xl lg:text-8xl font-semibold text-purple-300">Get In Touch</h3>
-
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
-                <div class="space-y-6 reveal reveal-left">
-                    <p class="md:text-xl lg:text-2xl leading-relaxed">
-                        I'm currently looking for new opportunities. Whether you have a question or just want to say hi,
-                        my inbox is always open!
+                <div class="space-y-4 reveal reveal-left">
+                    <p class="md:text-lg lg:text-xl leading-relaxed text-zinc-300">
+                        I'm open to full-time roles, contract work, and meaningful collaborations.
+                        If you have an idea, a project, or simply want to connect, feel free to reach out.
                     </p>
+
                     <div class="pt-4">
-                        <p class="text-cyan-400 font-bold text-lg mb-2">Direct Email:</p>
-                        <a href="mailto:your.email@example.com"
-                            class="text-2xl font-bold hover:text-pink-400 transition">onah.victor@example.com</a>
+                        <p class="text-sm uppercase tracking-widest text-zinc-400 mb-1">
+                            Email
+                        </p>
+                        <a href="mailto:victoronah.dev@gmail.com"
+                            class="text-lg md:text-xl font-bold text-purple-300 hover:text-cyan-400 transition">
+                            victoronah.dev@gmail.com
+                        </a>
                     </div>
                 </div>
 
-                <form action="#" class="bg-purple-950/50 p-8 border border-purple-400 space-y-6 reveal reveal-right">
+                <form class="bg-zinc-900/50 border border-zinc-800 rounded-md p-6 space-y-4 reveal reveal-right">
                     <div>
-                        <label class="block text-sm uppercase tracking-widest text-zinc-400 mb-2">Name</label>
-                        <input type="text"
-                            class="w-full bg-purple-950 border border-purple-500 p-3 focus:border-cyan-400 outline-none transition">
+                        <label class="block text-xs uppercase tracking-widest text-zinc-400 mb-1">
+                            Name
+                        </label>
+                        <input type="text" class="w-full bg-zinc-950 border border-zinc-800 rounded p-3 text-sm
+                                   focus:border-purple-400 outline-none transition" />
                     </div>
+
                     <div>
-                        <label class="block text-sm uppercase tracking-widest text-zinc-400 mb-2">Email</label>
-                        <input type="email"
-                            class="w-full bg-purple-950 border border-purple-500 p-3 focus:border-cyan-400 outline-none transition">
+                        <label class="block text-xs uppercase tracking-widest text-zinc-400 mb-1">
+                            Email
+                        </label>
+                        <input type="email" class="w-full bg-zinc-950 border border-zinc-800 rounded p-3 text-sm
+                                   focus:border-purple-400 outline-none transition" />
                     </div>
+
                     <div>
-                        <label class="block text-sm uppercase tracking-widest text-zinc-400 mb-2">Message</label>
-                        <textarea rows="4"
-                            class="w-full bg-purple-950 border border-purple-500 p-3 focus:border-cyan-400 outline-none transition"></textarea>
+                        <label class="block text-xs uppercase tracking-widest text-zinc-400 mb-1">
+                            Message
+                        </label>
+                        <textarea rows="4" class="w-full bg-zinc-950 border border-zinc-800 rounded p-3 text-sm
+                                   focus:border-purple-400 outline-none transition"></textarea>
                     </div>
-                    <button type="submit"
-                        class="w-full py-4 bg-indigo-700 hover:bg-indigo-600 border border-indigo-200 text-white font-bold transition">
+
+                    <button type="submit" class="w-full py-3 bg-white hover:bg-white/80
+                               rounded-md text-sm uppercase tracking-widest
+                               transition text-black">
                         Send Message
                     </button>
                 </form>
             </div>
         </section>
+
     </main>
 
-    <footer
-        class="py-12 px-6 border-t bg-purple-950/50 border-purple-300 lg:max-w-6xl lg:mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-        <div class="flex gap-8 font-medium">
-            <a href="#" class="hover:text-cyan-400 transition">GitHub</a>
-            <a href="#" class="hover:text-cyan-400 transition">LinkedIn</a>
-            <a href="#" class="hover:text-cyan-400 transition">Twitter</a>
+    <footer class="mt-24 px-4 py-12 border-t border-zinc-800 bg-zinc-900/40 backdrop-blur-md">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row gap-6 md:gap-0 justify-between items-center">
+
+            <!-- Brand / Credit -->
+            <p class="text-sm text-zinc-400 tracking-wide">
+                Designed & Built by
+                <span class="text-purple-300 font-semibold">Onah Victor</span>
+                &copy; 2026
+            </p>
+
+            <!-- Social / Links -->
+            <div class="flex gap-6 text-sm uppercase tracking-widest font-medium">
+                <a href="https://github.com/Victor-Onah" target="_blank" class="hover:text-purple-400 transition">
+                    GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/victor-onah-066563274/" target="_blank"
+                    class="hover:text-purple-400 transition">
+                    LinkedIn
+                </a>
+                <a href="https://x.com/__allAboutJS" target="_blank" class="hover:text-purple-400 transition">
+                    Twitter
+                </a>
+            </div>
         </div>
-        <p class="text-zinc-300 text-sm italic">Designed & Built by Onah Victor &copy; 2026</p>
     </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const observerOptions = {
-                threshold: 0.15, // Trigger when 15% of the element is visible
-                rootMargin: "0px 0px -50px 0px" // Slight offset so it triggers just as it enters
+                threshold: 0.15,
+                rootMargin: "0px 0px -50px 0px"
             };
 
             const observer = new IntersectionObserver((entries) => {
@@ -189,6 +390,17 @@
             animatedElements.forEach((el) => void observer.observe(el));
         });
     </script>
-</body>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+    </script>
+
+</body>
 </html>
