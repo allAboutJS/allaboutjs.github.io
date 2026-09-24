@@ -1,5 +1,7 @@
 {
 	"scripts": {
+		"serve": "node serve.js",
+		"preview": "node serve.js",
 		"start:tailwind": "npx @tailwindcss/cli -i ./styles/input.css -o ./styles/global.css --watch"
 	},
 	"dependencies": {
